@@ -82,3 +82,9 @@
 .new-layout .trip-list .feature{transition:transform .2s,box-shadow .2s}
 .new-layout .about-trip{max-width:860px}
 @media(max-width:850px){.new-layout .trip-list .feature{grid-template-columns:1fr;min-height:0}.new-layout .trip-list .feature img{grid-row:1;min-height:0;height:250px}}
+
+/* Keep distance labels separate from stop titles. */
+.detail-page .stop{grid-template-columns:110px minmax(0,1fr)}
+.detail-page .km-range{font-size:17px;white-space:nowrap}
+.detail-page .km-range small{font-size:11px}
+@media(max-width:720px){.detail-page .stop{grid-template-columns:86px minmax(0,1fr);gap:12px}.detail-page .km-range{font-size:14px}.detail-page .km-range small{font-size:10px}}
